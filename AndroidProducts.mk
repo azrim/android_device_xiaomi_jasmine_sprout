@@ -23,9 +23,9 @@
 
 # inherit MI A2 AICP device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_jasmine_sprout.mk
+    $(LOCAL_DIR)/cesium_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_jasmine_sprout-eng \
-    aicp_jasmine_sprout-userdebug \
-    aicp_jasmine_sprout-user
+    cesium_jasmine_sprout-eng \
+    cesium_jasmine_sprout-userdebug \
+    cesium_jasmine_sprout-user

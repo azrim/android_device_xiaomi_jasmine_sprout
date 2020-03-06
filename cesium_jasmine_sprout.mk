@@ -30,7 +30,7 @@ WITH_SU := false
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -42,6 +42,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aicp_jasmine_sprout
+PRODUCT_NAME := cesium_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
+PRODUCT_RELEASE_NAME := jasmine_sprout
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
